@@ -1,3 +1,7 @@
 #canvas {
     background: #b7bbd2;
 }
+
+#canvasChart {
+    border: 2px solid #f3cfd4;
+}
