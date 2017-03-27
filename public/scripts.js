@@ -17,6 +17,9 @@ window.onload = function () {
     ctx.strokeRect(300, 200, 200, 100);
 
 
+    // chart //
+
+
     var canvasChart = document.getElementById('canvasChart'); //locate the canvas
     var ctxChart = canvasChart.getContext('2d'); //access the 2d context (has to be lowercase)
     var scores = [100, 90, 85, 45, 72, 88];
@@ -56,5 +59,31 @@ window.onload = function () {
     // ctxChart.stroke();
     // ctxChart.fill();
 
+
+    // Arc //
+
+    var canvasArc = document.getElementById('canvasArc'); //locate the canvas
+    var ctxArc = canvasArc.getContext('2d'); //access the 2d context (has to be lowercase)
+
+    //using arcTo for rounded corners
+    ctxArc.beginPath();
+    ctxArc.moveTo(80, 50); //x y
+    ctxArc.fillStyle = 'teal';
+    ctxArc.strokeStyle = 'dark blue';
+    ctxArc.lineWidth = 2;
+    // top right
+    ctxArc.arcTo(210, 50, 210, 70, 20); // begin x y, end x y, radius
+
+    // bottom right
+    ctxArc.arcTo(210 ,200, 160, 200, 20);
+
+    // bottom left
+    ctxArc.arcTo(60, 200, 60, 180, 20);
+
+    // top left
+    ctxArc.arcTo(60, 50, 100, 50, 20);
+    
+    ctxArc.fill();
+    ctxArc.stroke();
 
 };
