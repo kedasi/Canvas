@@ -9,3 +9,19 @@
 #canvasArc {
     background: #def3ec;
 }
+
+#canvasLine {
+    background: #f3dce7;
+}
+#canvasLineChart {
+    background: #93c9af;
+}
+#canvasBezier {
+    background: #F4A460;
+}
+#canvasText {
+    background: #4bc983;
+}
+#canvasQuad {
+    background: #aac960;
+}
